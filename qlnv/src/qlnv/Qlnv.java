@@ -35,6 +35,7 @@ public class Qlnv {
         System.out.println("nhap nhan vien thu 2");
         nhanvien nv2 = new nhanvien();
         System.out.print("nhap ma nhan vien:");
+        sc.nextLine();
         nv2.setMaNV(sc.nextLine());
         System.out.print("nhap ho ten:");
         nv2.setHoTen(sc.nextLine());
@@ -47,7 +48,7 @@ public class Qlnv {
         System.out.println("nhap thong tin nhan vien 3");
         nv3.NhapNhanVien();
         /*//có tham số
-        nv3.NhapNhanVien();
+        nv4.NhapNhanVien();
         nhanvien nv4 = new nhanvien("nv01", "Nguyen Van A", 29, 500000);
         // In thông tin nhân viên
         System.out.println("\nThong tin NV 1 :");
@@ -59,5 +60,18 @@ public class Qlnv {
         System.out.println("\nThong tin NV 4 :");
         nv4.XuatThongTin();*/
     }
-    
+    /*System.out.println("danh sach nhan vien");
+    nhanvien.tieuDeCot();*/
+    for(int i==0;i<n-1;i++)
+    {
+        for(int j=i+1;j<n,j++)
+        {
+            if(dsNV[j].tinhLuong()>dsNV[i].tinhLuong())
+            {
+                NhanVIen temp=dsNV[i];
+                dsNV[i]=dsNV[j];
+                dsNV[j]=temp;
+            }
+        }
+    }
 }

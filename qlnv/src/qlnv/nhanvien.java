@@ -58,8 +58,8 @@ public class nhanvien {
     // nhập dữ liệu
     public void NhapNhanVien(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("MNV: ");sc.nextLine();
-        System.out.print("ho ten: ");sc.nextLine();
+        System.out.print("MNV: ");MaNV=sc.nextLine();
+        System.out.print("ho ten: ");HoTen=sc.nextLine();
         System.out.print("so ngay cong: ");NgayCong=sc.nextInt();
         System.out.print("Tien cong 1 ngay: ");TienCong=sc.nextDouble();
     }
@@ -71,8 +71,20 @@ public class nhanvien {
             return NgayCong*TienCong;
         }
     }
+    for(int i==0;i<n-1;i++)
+    {
+        for(int j=i+1;j<n,j++)
+        {
+            if(dsNV[j].tinhLuong()>dsNV[i].tinhLuong())
+            {
+                nhanvien temp=dsNV[i];
+                dsNV[i]=dsNV[j];
+                dsNV[j]=temp;
+            }
+        }
+    }
     public void XuatThongTin(){
-        System.out.printf("%-15s|%-30s|%5d|%20.0f|20.0f MNV " + MaNV,HoTen,NgayCong,TienCong,TienLuong());
+        System.out.printf("%-15s|%-30s|%5d|%20.0f|%20.0f\n" , MaNV,HoTen,NgayCong,TienCong,TienLuong());
         /*System.out.println("Ho Ten: " + HoTen);
         System.out.println("Ngay sinh: " + NgayCong);
         System.out.println("Tien Cong:" + TienCong);
